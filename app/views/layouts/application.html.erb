@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SharePicture</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+
+    <%= favicon_link_tag('favicon.ico') %>
+  </head>
+
+  <body>
+
+   <header>
+   <h2>SharePicture</h2>
+    <ul>
+     <a href="/">ホーム</a>
+     <a href="/post">投稿</a>
+     <a href="/share">みんなの作品</a>
+    </ul>
+   </header>
+    <%= yield %>
+  </body>
+</html>
