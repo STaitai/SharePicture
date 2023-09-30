@@ -1,3 +1,15 @@
-<% @searches.each do |search| %>
-<h1><%= search.picturename %></h1>
+<% if @searches.length != 0 %>
+
+  <% @searches.each do |search| %>
+    <br>
+    <a href=<%= "/share/show/#{search.id}" %>><img src="<%= "/pictures/#{search.id}.jpg" %>" width="400" class="picture"></a>
+    <br>
+    <% if @name=="ニックネーム"%>
+      <h4 class="picture_text"><%= link_to(search.postname, "/share/show/#{search.id}") %></h4>
+    <% else %>
+      <h4 class="picture_text"><%= link_to(search.picturename, "/share/show/#{search.id}") %></h4>
+    <%end%>
+  <%end%>
+<%else%>
+  <h1>検索結果がありません</h1>
 <%end%>

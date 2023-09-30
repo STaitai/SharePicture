@@ -1,13 +1,13 @@
 <p class="error_message"><%= flash[:notice] %></p>
 
 <%=form_tag("/post/create", {multipart: true}) do%>
-<h3 class= "post_textbox_name">ニックネーム</h3>
-<textarea class= "post_textbox" name= "postname"></textarea>
-<br>
-<h3 class = "post_textbox_name">作品名</h3>
-<textarea class="post_textbox" name= "picturename"></textarea>
-<h3 class = "post_textbox_name">作品</h3>
-<input type="file" name="picture">
-<br>
-<input type= "submit" value= "投稿">
+  <h3 class= "post_textbox_name">ニックネーム</h3>
+  <textarea class= "post_textbox" name= "postname"></textarea>
+  <br>
+  <h3 class = "post_textbox_name">作品名</h3>
+  <textarea class="post_textbox" name= "picturename"></textarea>
+  <h3 class = "post_textbox_name">作品</h3>
+  <input type="file" name="picture">
+  <br>
+  <input type= "submit" value= "投稿">
 <%end%>

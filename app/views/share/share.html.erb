@@ -1,14 +1,17 @@
 <p class="success_message"><%= flash[:notice] %></p>
 
-<%= form_tag("/share/search") do%>
-<input name="search" class="search">
-<a href="/share/search"><input type="submit" value="検索"></a>
+<%= form_tag("/share/search", method: :get) do%>
+  <input name="search" class="search_bar">
+  <select name="select">
+    <option value="作品名">作品名</option>
+    <option value="ニックネーム">ニックネーム</option>
+  </select>
+  <input type="submit" value="検索">
 <% end %>
 
 <% @pictures.each do |picture| %>
-<br>
-<a href=<%= "/share/show/#{picture.id}" %>><img src="<%= "/pictures/#{picture.picture}" %>" width="400" class="picture"></a>
-<br>
-<h4 class="picture2"><%= link_to(picture.picturename, "/share/show/#{picture.id}") %></h4>
-
+  <br>
+  <a href=<%= "/share/show/#{picture.id}" %>><img src="<%= "/pictures/#{picture.picture}" %>" width="400" class="picture"></a>
+  <br>
+  <h4 class="picture_text"><%= link_to(picture.picturename, "/share/show/#{picture.id}") %></h4>
 <%end%>

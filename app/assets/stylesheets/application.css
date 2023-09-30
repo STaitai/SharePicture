@@ -8,7 +8,6 @@ header {
     top: 0%;
   }
 
-
 body {
     margin: 0%;
     padding-top: 50px; 
@@ -21,6 +20,9 @@ body a{
 
 }
 
+
+
+
 .homepost_link {
   margin-left: 400px;
   padding-left: 25px;
@@ -31,13 +33,10 @@ body a{
   color: black;
   text-decoration:none;
 }
+
 .homepost_link:hover {
   border-style: solid;
   border-color: rgba(255, 255, 255, 0.1);
-}
-
-.homepost_text {
-  margin: 0%;
 }
 
 .homepost {
@@ -59,6 +58,7 @@ body a{
   color: black;
   text-decoration:none;
 }
+
 .homeshare_link:hover {
   border-style: solid;
   border-color: rgba(255, 255, 255, 0.1);
@@ -104,6 +104,9 @@ body a{
   border-radius:30px;
 }
 
+
+
+
 .post_textbox_name {
   margin-top: 10px;
   margin-bottom: 0%;
@@ -115,37 +118,30 @@ body a{
 	height: 20px; 
 }
 
+.error_message {
+  color: red;
+}
+
+
+
+
 .picture {
   margin-top: 25px;
   margin-left: 0px;
   border: 10px solid rgb(255,180,0);
 }
 
-.picture2 {
+.picture_text {
   margin-left: 0px;
 }
 
-
-.show {
-  margin-top: 0%;
-}
-
-.text {
-  size: 1000px;
-}
-
-.search {
+.search_bar {
   margin-left: 0px;
   margin-top: 10px;
   width: 400px;
   height: 20px;
 }
 
-.error_message {
-  color: red;
-}
-
 .success_message {
   color: green;
 }
-
